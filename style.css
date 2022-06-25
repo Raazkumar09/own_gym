@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.font{
+    font-size: 20px;
+}
+
+.logo{
+    color: rgb(135, 9, 253);
+    font-weight: bold;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    padding: 0px 40px;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.nav-mar{
+    margin: 20px 50px;
+}
+
+/* main */
+.line{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.middle{
+    padding: 70px 170px;
+    /* margin: 10px 5px; */
+    display: block;
+    
+}
+
+button{
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(161, 97, 97);
+    color: white;
+}
+
+#section::before{
+    content: "";
+    background: url("bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 67.5%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    /* overflow-y: hidden; */
+}  
+
+/* left and right section */
+.left{
+    /* width: 50%;
+    height: 40vh; */
+    text-align: center;
+    display: block;
+    padding: 70px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#left::before{
+    content: "";
+    background: url("men.webp") no-repeat center center/cover;
+    position: absolute;
+    height: 47%;
+    width: 50%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.right{
+    text-align: center;
+    display: block;
+    padding: 70px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#right::before{
+    content: "";
+    background: url("women.webp") no-repeat center center/cover;
+    position: absolute;
+    height: 47%;
+    width: 50%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#container{
+    display: flex;
+}
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
